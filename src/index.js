@@ -1,5 +1,7 @@
-import './css/styles.scss';
-import value from './js/a';
-import './js/b';
+import './sass/styles.scss';
+import './js/modal';
+import './js/carousel';
+import './js/notifications';
+// import Gumshoe from 'gumshoejs';
 
-const multiply = (a, b) => a * b;
+console.log(document.querySelectorAll('#page-nav a'));

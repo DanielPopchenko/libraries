@@ -3,74 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack tutorial</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Библиотеки</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <nav class="site-nav">
-          <a href="#!"
-            ><img
-              class="logo"
-              src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/07/Pepsi_logo_emblem_logotype-2.png?auto=format&q=60&fit=max&w=930"
-              alt="logotype"
-          /></a>
-          <ul class="site-nav-list">
-            <li class="site-nav-item"><a href="#!">Главная</a></li>
-            <li class="site-nav-item"><a href="#!">О нас</a></li>
-            <li class="site-nav-item"><a href="#!">Контакты</a></li>
-            <li class="site-nav-item"><a href="#!">Сотрудничество</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section class="about">
-        <div class="container">
-          <h1 class="about-title">About</h1>
-          <div class="description">
-            <div class="text-wrapper">
-              <img
-                class="description-img"
-                src="https://mllj2j8xvfl0.i.optimole.com/cb:pJlS~36fbd/w:auto/h:auto/q:90/f:avif/https://s15165.pcdn.co/wp-content/uploads/2021/04/Vogue-Logo.png"
-                alt=""
-              />
-              <p class="about-text text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus vel placeat
-                tempora velit adipisci praesentium fuga necessitatibus corrupti doloribus
-                cupiditate, odit earum delectus. Fuga obcaecati esse blanditiis dolores
-                reprehenderit itaque?
-              </p>
-            </div>
-            <div class="text-wrapper">
-              <img
-                class="description-img"
-                src="https://mllj2j8xvfl0.i.optimole.com/cb:pJlS~36fbd/w:auto/h:auto/q:90/f:avif/https://s15165.pcdn.co/wp-content/uploads/2021/04/Disney-wordmark-1024x430.png"
-                alt=""
-              />
-              <p class="about-text text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus vel placeat
-                tempora velit adipisci praesentium fuga necessitatibus corrupti doloribus
-                cupiditate, odit earum delectus. Fuga obcaecati esse blanditiis dolores
-                reprehenderit itaque?
-              </p>
-            </div>
-            <div class="text-wrapper">
-              <img
-                class="description-img"
-                src="https://mllj2j8xvfl0.i.optimole.com/cb:pJlS~36fbd/w:auto/h:auto/q:90/f:avif/https://s15165.pcdn.co/wp-content/uploads/2021/04/LEGO-Logo.png"
-                alt=""
-              />
-              <p class="about-text text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus vel placeat
-                tempora velit adipisci praesentium fuga necessitatibus corrupti doloribus
-                cupiditate, odit earum delectus. Fuga obcaecati esse blanditiis dolores
-                reprehenderit itaque?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <button class="js-prev">Prev</button>
+    <button class="js-next">Next</button>
+    <div class="siema">
+      <div>Hi, I'm slide 1</div>
+      <div>Hi, I'm slide 2</div>
+      <div>Hi, I'm slide 3</div>
+      <div>Hi, I'm slide 4</div>
     </div>
+
+    <hr />
+
+    <!-- <ul id="page-nav">
+      <li><a href="#team">Team</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#profile">Profile</a></li>
+    </ul> -->
+
+    <hr />
+
+    <button type="button" data-open-madal>Open modal window</button>
+    <template id="modal">
+      <div class="modal">
+        <p>I'm a modal created from a DOM element/node.</p>
+        <button type="button" data-close-modal>
+          Close modal window
+        </button>
+      </div>
+    </template>
   </body>
 </html>

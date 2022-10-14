@@ -16,6 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
@@ -25,9 +29,13 @@ module.exports = {
           },
         },
       },
+      // {
+      //   test: /\.css$/i,
+      //   use: ['style-loader', 'css-loader'],
+      // },
       // Бери файлы css и используй для них css-loader
       {
-        test: /\.s[ac]ss$/i,
+        test: [/\.s[ac]ss$/i],
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
@@ -42,9 +50,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'styles.css',
-    }),
+    new MiniCssExtractPlugin({}),
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
